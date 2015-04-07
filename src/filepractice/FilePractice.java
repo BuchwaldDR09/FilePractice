@@ -25,7 +25,8 @@ public class FilePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        File data = new File("C:" + File.separatorChar + "temp" + File.separatorChar +
+        String userHome = System.getProperty("user.home");
+        File data = new File(userHome + File.separatorChar + "temp" + File.separatorChar +
                 "lab1.txt");
         
         BufferedReader read = null;
